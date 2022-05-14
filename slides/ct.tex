@@ -1,0 +1,157 @@
+% !TeX encoding = utf8
+\documentclass[german,aspectratio=169]{beamer}
+\usepackage{beamerthemeHM} 
+\input{./includes/ColorDefinitions}
+\input{./includes/packages}
+
+
+
+% Zahlen, Mengen, Intervalle, Addieren, Multiplizieren, Subtrahieren, Dividieren
+\title{\huge Computational Thinking}
+\subtitle{Algorithmisches Denken mithilfe von Jupyter-Notebooks}
+\author{Prof. Martin Hobelsberger \\ \href{mailto:zoennchen.benedikt@hm.edu}{Dr. Benedikt Zönnchen}}
+\date{19. Mai 2022}
+\institute{	\includegraphics[height=15pt]{./figs/Hochschule_Muenchen_Logo}}
+\begin{document}
+
+\begin{frame}
+ \titlepage
+\end{frame}
+
+%\begin{frame}
+%	\frametitle{}
+%	Algorithmisches Denken im Alltag:
+%	\begin{quoting}
+%		``Plans with people that pass the entire cognitive load to them rarely materialize.'' -- Algorithms to Live By
+%	\end{quoting}
+%\end{frame}
+
+\begin{frame}
+	\frametitle{Herausforderung}
+	Vielfältige interdisziplinäre CSPlus / PlusCS Studiengänge der Hochschule München:
+	\begin{enumerate}[label=$\bullet$]
+		\item Digital Engineering
+		\item Informatik und Design
+		\item Geodata Science
+		\item Data Science \& Scientific Computing
+		\item $\ldots$ (in der Zukunft)
+	\end{enumerate}
+	$\Rightarrow$ Erhöhte Heterogenität der Studierenden
+\end{frame}
+
+\begin{frame}
+	\frametitle{Herausforderung}
+	Studierenden jener Studiengänge soll es möglich sein
+	\begin{quoting}
+		\glqq\textbf{Problemstellungen} zu \textbf{identifizieren}, \textbf{abstrakt} zu \textbf{modellieren}, sie dabei in \textbf{Teilprobleme} zu \textbf{zerlegen}, \textbf{Lösungsstrategien} zu \textbf{entwerfen} und auszuarbeiten und diese \textbf{formalisiert} \textbf{darzustellen}, sodass sie von einem Menschen (oder auch einem Computer) verstanden und ausgeführt werden können.\grqq
+	\end{quoting}
+	Kurz gesagt: Studierende sollen \textbf{Computational Thinking (CT)} beherrschen.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Was verstehen wir unter CT?}
+	\begin{center}
+		\includegraphics[scale=0.5]{./figs/ct-logo}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Was verstehen wir unter CT?}
+	Computational Thinking
+	\begin{enumerate}[label=$\bullet$]
+		\item ist eine Aktivität
+		\item bedeutet primär konzipieren (Programmierung als Mittel)
+		\item ist eine fundamentale Fähigkeit
+		\item ist eine Denkweise des Menschen (nicht der Maschine)
+		\item kombiniert analytisches, abstraktes und schaffendes Denken
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Warum CT?}
+	Drei wesentliche Punkte weshalb wir CT für so wichtig halten sind:
+	\begin{enumerate}[label=(\arabic*)]
+		\item Intrinsischer Wert
+		\item (Langfristiger) Nutzen
+		\item Selbstbestimmung in der digitalen Ära
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Lerninhalte}
+	Die Auswahl der Lerninhalte viel uns schwer und steht offen zur Diskussion.
+	\begin{enumerate}[label=(\arabic*)]
+		\item Informationsverarbeitung des digitalen Computers: 
+		\begin{enumerate}[label=$\bullet$]
+			\item Interpretation
+			\item Repräsentation
+			\item Manipulation
+			\item $\ldots$
+		\end{enumerate}
+		\item Datenstrukturen und Algorithmen mit Python
+			\begin{enumerate}[label=$\bullet$]
+			\item Variablen, Ausdrücke und Funktionsaufrufe
+			\item Datentypen (Zahlen, Zeichenketten, Listen, Mengen, Wörterbücher, $\ldots$)
+			\item Funktionen
+			\item Kontrollstrukturen
+			\item OOP
+		\end{enumerate}
+		\item CT in Aktion
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Kurskonzept}
+	\begin{block}{Rahmen}
+		CT besteht aus Vorlesungen (2 SWS) und Praktika (2 SWS).
+	\end{block}
+	\begin{block}{Ziel}
+		\begin{enumerate}[label = $\bullet$]
+			\item Lernen durch selbständiges (Wieder-)Entdecken.
+			\item Früh ins ``Doing'' kommen
+		\end{enumerate}
+	 $\Rightarrow$ \textbf{Praktika greifen voraus!}
+	\end{block}
+	\begin{block}{Bedingungen}
+		\begin{enumerate}[label = $\bullet$]
+			\item Minimale technische Hürden
+			\item ``Intuitive'' und gut dokumentierte Programmiersprache als Werkzeug
+			\item Kontinuierliches Feedback beim ``Doing''
+			\item Entgegenwirken des ``Nerdfaktors''
+		\end{enumerate}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Hilfsmittel}
+	%Technologien:
+	\begin{enumerate}[label = $\bullet$]
+		\item Material zum Anfassen: Karten, Bücherstapel, Lampen, $\ldots$
+		\item Programmiersprachen: Python (+ JavaScript für \textit{Informatik und Design})
+		\item Aufgabengenerierung: \href{https://otter-grader.readthedocs.io/en/latest/}{Otter-Grader}
+		\item Entwicklungsumgebung: 
+		\begin{enumerate}[label = $\bullet$]
+			\item \href{https://jupyter.org/}{Jupyter-Notebooks} (+ \href{https://p5js.org/get-started/}{P5.js sketch})
+			\item im JupyterLab oder \href{https://code.visualstudio.com/}{VSCode}
+			\item gehostet via \href{https://jupyter.org/hub}{JupyterHub}
+		\end{enumerate}
+		\item Lehrbuch: \href{https://bzoennchen.github.io/ct-book/intro.html}{Interaktives CT-Buch} als \href{https://jupyterbook.org/en/stable/intro.html}{JupyterBook}
+		\item \href{https://robo-world-doc.readthedocs.io/en/latest/index.html}{Roboworld Python Package}
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Infrastruktur}
+	Eigener JupyterHub auf einem Kubernetes-Cluster:
+	\begin{figure}
+		\includegraphics[width=0.75\textwidth]{./figs/infrastructure}
+		\caption{Quelle: \href{https://zero-to-jupyterhub.readthedocs.io/en/latest/administrator/architecture.html}{The JupyterHub Architecture}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Infrastruktur}
+	GitLab gespiegelt auf GitHub
+\end{frame}
+
+\end{document}

@@ -1,0 +1,40 @@
+\ProvidesPackage{beamerthemeHM}
+%\input{ColorDefinitions}
+
+%% shadow, font, color, outer, inner
+%% normal text, alerted text, example text, structure
+
+\newenvironment{blockdefinition}[1]{%
+	\setbeamercolor{block title}{bg=colordefinition!20,fg=black}
+	\begin{block}{\textbf{Definition (#1)}}}{\end{block}}
+
+\newenvironment{myexample}[1]{%
+	\setbeamercolor{block title}{bg=colorexample!50,fg=black}
+	\begin{block}{\textbf{Beispiel (#1)}}}{\end{block}}
+
+
+%\useoutertheme{split}
+\setbeamercolor{normal text}{fg=black,bg=white}
+\setbeamercolor{alerted text}{fg=myorange,bg=white}
+\setbeamercolor{example text}{fg=mygreen,bg=white}
+\setbeamercolor{structure}{fg=myblue,bg=white}
+\setbeamercolor{titlelike}{fg=myblue}
+\setbeamercolor{subtitle}{fg=black}
+\setbeamerfont{title}{series=\bfseries}
+
+\setbeamertemplate{sections/subsections in toc}[default]
+\setbeamertemplate{items}[default]
+\setbeamertemplate{navigation symbols}[only frame symbol]
+
+\setbeamertemplate{blocks}[default]
+
+%\setbeamercolor{block title}        {use=normal text, fg=black,bg=tumlightblue}
+\setbeamercolor{block title}        {use=structure}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=alerted text.fg}
+%\setbeamercolor{block title example}{use=example text,fg=white,bg=example text.fg}
+\setbeamercolor{block title example}{use=example text}
+\setbeamercolor{block algorithm}{use=example text, fg=black,bg=myblue2}
+
+\setbeamercolor{block body}        {parent=normal text,use=block title,        bg=block title.bg!25!bg}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title.bg!25!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!15!bg}
