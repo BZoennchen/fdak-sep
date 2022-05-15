@@ -6,6 +6,13 @@ from pathlib import Path
 import shutil
 import argparse
 
+GIT_REPO_CONFIG = {
+    'jupyterhub_url': 'https://datahub.cs.hm.edu/',
+    'git_repo': 'https://github.com/BZoennchen/fdak-sep',
+    'branch': 'main',
+    'app': 'lab/tree/fdak-sep/',
+    'path': 'code/' # path to 
+}
 
 def compile(nb, run_tests=False):
     if run_tests:
@@ -38,11 +45,16 @@ def copy_content(training, grading=False):
     dst = solution_dir.joinpath(training.name)
     clean(dst)
     copy_assignmet(src, dst, grading)
+    return Path(students_dir.name).joinpath(training.name)
 
 def clean(dir):
     if dir.exists():
         shutil.rmtree(str(dir))
 
+def nbgitpuller_link(resource):
+    file_to_open = str(Path(GIT_REPO_CONFIG['path']).joinpath(resource))
+    nbgitpuller_link = GIT_REPO_CONFIG['jupyterhub_url']+'hub/user-redirect/git-pull?repo='+(GIT_REPO_CONFIG['git_repo']+'&urlpath='+GIT_REPO_CONFIG['app']+file_to_open+'&branch='+GIT_REPO_CONFIG['branch']).replace(':', '%3A').replace('/', '%2F')
+    return nbgitpuller_link
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
@@ -82,6 +94,8 @@ if __name__ == '__main__':
     print(f'run test: {run_tests}')
     print(f'grading: {grading}')
     
+        
+    
     if not tmp.exists():
         for training_dir in master_dir.iterdir():
             if (training_dir.is_dir() and trainings == None) or (trainings != None and training_dir.name in trainings):
@@ -91,9 +105,11 @@ if __name__ == '__main__':
                 for nb in training_dir.iterdir():
                     if nb.match('*.ipynb'):
                         compile(nb)
-                        copy_content(training_dir, grading)
+                        dir = copy_content(training_dir, grading)
+                        print(f'nbgitpuller-link: {nbgitpuller_link(dir.joinpath(nb.name))}')
                         clean(tmp)
                         found = True
+                # no notebook found in the dir so this is might be an assignment without a notebook
                 if not found:
                     shutil.copytree(training_dir, students_dir.joinpath(
                         training_dir.name), dirs_exist_ok=True)
