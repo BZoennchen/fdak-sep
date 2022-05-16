@@ -4,27 +4,34 @@
 \input{./includes/ColorDefinitions}
 \input{./includes/packages}
 
-
-
 % Zahlen, Mengen, Intervalle, Addieren, Multiplizieren, Subtrahieren, Dividieren
 \title{\huge Computational Thinking}
-\subtitle{Algorithmisches Denken mithilfe von Jupyter-Notebooks}
-\author{Prof. Martin Hobelsberger \\ \href{mailto:zoennchen.benedikt@hm.edu}{Dr. Benedikt Zönnchen}}
+\subtitle{Algorithmisches Denken mithilfe des Jupyter-Ökosystems}
+\author{\href{mailto:zoennchen.benedikt@hm.edu}{Dr. Benedikt Zönnchen} \\ \href{mailto:martin.hobelsberger@hm.edu}{Prof. Dr. Martin Hobelsberger}}
 \date{19. Mai 2022}
-\institute{	\includegraphics[height=15pt]{./figs/Hochschule_Muenchen_Logo}}
+\institute{\includegraphics[height=15pt]{./figs/Hochschule_Muenchen_Logo}}
 \begin{document}
 
 \begin{frame}
  \titlepage
 \end{frame}
 
-%\begin{frame}
-%	\frametitle{}
-%	Algorithmisches Denken im Alltag:
-%	\begin{quoting}
-%		``Plans with people that pass the entire cognitive load to them rarely materialize.'' -- Algorithms to Live By
-%	\end{quoting}
-%\end{frame}
+\begin{frame}
+	\frametitle{Überblick}
+	\textbf{
+	\begin{enumerate}[label = \arabic*.]
+		\item Herausforderung
+		\item Kurskonzeption
+		\item Realisierung
+		\begin{enumerate}[label = 3.\arabic*]
+			\item Intuitiver Zugang
+			\item Minimale technische Hürden
+			\item Kontinuierliches Feedback
+		\end{enumerate}
+	\item Retrospektive
+	\end{enumerate}
+	}
+\end{frame}
 
 \begin{frame}
 	\frametitle{Herausforderung}
@@ -48,34 +55,51 @@
 	Kurz gesagt: Studierende sollen \textbf{Computational Thinking (CT)} beherrschen.
 \end{frame}
 
+\section{Kurskonzeption}
+
+\begin{frame}
+	\frametitle{Überblick}
+		\begin{enumerate}[label = \arabic*.]
+			\item Herausforderung
+			\item \textbf{Kurskonzeption}
+			\item Realisierung
+			\begin{enumerate}[label = 3.\arabic*]
+				\item Intuitiver Zugang
+				\item Minimale technische Hürden
+				\item Kontinuierliches Feedback
+			\end{enumerate}
+			\item Retrospektive
+		\end{enumerate}
+\end{frame}
+
 \begin{frame}
 	\frametitle{Was verstehen wir unter CT?}
 	\begin{center}
-		\includegraphics[scale=0.5]{./figs/ct-logo}
+		\includegraphics[width=0.6\textwidth]{./figs/ct-logo}
 	\end{center}
 \end{frame}
 
-\begin{frame}
-	\frametitle{Was verstehen wir unter CT?}
-	Computational Thinking
-	\begin{enumerate}[label=$\bullet$]
-		\item ist eine Aktivität
-		\item bedeutet primär konzipieren (Programmierung als Mittel)
-		\item ist eine fundamentale Fähigkeit
-		\item ist eine Denkweise des Menschen (nicht der Maschine)
-		\item kombiniert analytisches, abstraktes und schaffendes Denken
-	\end{enumerate}
-\end{frame}
+%\begin{frame}
+%	\frametitle{Was verstehen wir unter CT?}
+%	Computational Thinking
+%	\begin{enumerate}[label=$\bullet$]
+%		\item ist eine Aktivität,
+%		\item bedeutet primär konzipieren (Programmierung als Mittel),
+%		\item ist eine fundamentale Fähigkeit,
+%		\item ist eine Denkweise des Menschen (nicht der Maschine),
+%		\item kombiniert analytisches, abstraktes und schaffendes Denken.
+%	\end{enumerate}
+%\end{frame}
 
-\begin{frame}
-	\frametitle{Warum CT?}
-	Drei wesentliche Punkte weshalb wir CT für so wichtig halten sind:
-	\begin{enumerate}[label=(\arabic*)]
-		\item Intrinsischer Wert
-		\item (Langfristiger) Nutzen
-		\item Selbstbestimmung in der digitalen Ära
-	\end{enumerate}
-\end{frame}
+%\begin{frame}
+%	\frametitle{Warum CT?}
+%	Drei wesentliche Punkte weshalb wir CT für so wichtig halten:
+%	\begin{enumerate}[label=(\arabic*)]
+%		\item intrinsischer Wert,
+%		\item (langfristiger) Nutzen,
+%		\item Selbstbestimmung in der digitalen Ära
+%	\end{enumerate}
+%\end{frame}
 
 \begin{frame}
 	\frametitle{Lerninhalte}
@@ -103,23 +127,41 @@
 \begin{frame}
 	\frametitle{Kurskonzept}
 	\begin{block}{Rahmen}
-		CT besteht aus Vorlesungen (2 SWS) und Praktika (2 SWS).
+		Der CT-Kurs besteht aus Vorlesungen (2 SWS) und Praktika (2 SWS).
 	\end{block}
 	\begin{block}{Ziel}
 		\begin{enumerate}[label = $\bullet$]
-			\item Lernen durch selbständiges (Wieder-)Entdecken.
-			\item Früh ins ``Doing'' kommen
+			\item Lernen durch selbständiges (Wieder-)Entdecken
+			\item frühzeitig ins ``Doing'' kommen
 		\end{enumerate}
 	 $\Rightarrow$ \textbf{Praktika greifen voraus!}
 	\end{block}
 	\begin{block}{Bedingungen}
 		\begin{enumerate}[label = $\bullet$]
-			\item Minimale technische Hürden
-			\item ``Intuitive'' und gut dokumentierte Programmiersprache als Werkzeug
-			\item Kontinuierliches Feedback beim ``Doing''
-			\item Entgegenwirken des ``Nerdfaktors''
+			\item intuitiver Zugang
+			\item minimale technische Hürden
+			\item kontinuierliches Feedback beim ``Doing''
+			\item Ent­mys­ti­fi­zie­rung
 		\end{enumerate}
 	\end{block}
+\end{frame}
+
+\section{Realisierung}
+
+\begin{frame}
+	\frametitle{Überblick}
+	\begin{enumerate}[label = \arabic*.]
+		\item Herausforderung
+		\item Kurskonzeption
+		\item \textbf{Realisierung
+		\begin{enumerate}[label = 3.\arabic*]
+			\item Intuitiver Zugang
+			\item Minimale technische Hürden
+			\item Kontinuierliches Feedback
+		\end{enumerate}
+	}
+		\item Retrospektive
+	\end{enumerate}
 \end{frame}
 
 \begin{frame}
@@ -140,9 +182,69 @@
 	\end{enumerate}
 \end{frame}
 
+
+\subsection{Intuitiver Zugang}
+
 \begin{frame}
-	\frametitle{Infrastruktur}
-	Eigener JupyterHub auf einem Kubernetes-Cluster:
+	\frametitle{Python}
+	\begin{block}{Intuitiver Zugang}
+		Vorteile:
+		\begin{enumerate}[label = $\bullet$]
+			\item hohe Abstraktion
+			\item Nützlichkeit und Relevanz
+			\item lineare Lernkurve
+			\item schnelle Erfolgserlebnisse
+			\item sehr gutes Ökosystem
+		\end{enumerate}
+		Nachteile:
+		\begin{enumerate}[label = $\bullet$]
+			\item hohe Abstraktion
+			\item dynamische Typisierung
+			\item keine primitiven Datentypen
+			\item kein echtes Multi-Threading
+		\end{enumerate}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Notebooks}
+	\begin{block}{Intuitiver Zugang}
+		Vorteile:
+		\begin{enumerate}[label = $\bullet$]
+			\item einfacher Einstieg
+			\item Synergie zwischen Text und Code
+			\item ermöglicht serverseitige Codeausführung
+			\item zellenweise Auswertung (aka Debugging)
+			\item in sich abgeschlossen 
+		\end{enumerate}
+		Nachteile:
+		\begin{enumerate}[label = $\bullet$]
+			\item schwer zu Warten
+			\item erschweren Zusammenarbeit
+			\item ungeeignet für Anwendungsentwicklung
+		\end{enumerate}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Roboworld}
+	\begin{center}
+		\includegraphics[width=\textwidth]{./figs/world-simple-maze}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Roboworld}
+	\begin{center}
+		Roboworld Demo: \href{https://datahub.cs.hm.edu/}{https://datahub.cs.hm.edu/}
+	\end{center}
+\end{frame}
+
+\subsection{Minimale technische Hürden}
+
+\begin{frame}
+	\frametitle{JupyterHub}
+	Eigener JupyterHub auf unserem Kubernetes-Cluster:
 	\begin{figure}
 		\includegraphics[width=0.75\textwidth]{./figs/infrastructure}
 		\caption{Quelle: \href{https://zero-to-jupyterhub.readthedocs.io/en/latest/administrator/architecture.html}{The JupyterHub Architecture}}
@@ -150,8 +252,87 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Infrastruktur}
-	GitLab gespiegelt auf GitHub
+	\frametitle{JupyterHub}
+		\begin{block}{Minimale technische Hürden}
+	Vorteile:
+	\begin{enumerate}[label = $\bullet$]
+		\item einheitliche vorkonfigurierte Entwicklungsumgebung
+		\item Aufgabenverteilung durch git (im Hintergrund)
+		\item starke Gemeinschaft
+		\item Rechenleistung auf Serverseite
+	\end{enumerate}
+Nachteile:
+\begin{enumerate}[label = $\bullet$]
+	\item keine individuelle Entwicklungsumgebung
+	\item fehlende Interaktion mit git-Befehlen
+	\item keine Funktionalität für Abgaben (Praktikum, Prüfung)
+	\item Rechenleistung auf Serverseite (ab ca. 100 Benutzer:innen wird Kubernetes benötigt)
+\end{enumerate}
+\end{block}
 \end{frame}
+
+\subsection{Kontinuierliches Feedback}
+
+\begin{frame}
+	\frametitle{Otter-Grader}
+	\begin{center}
+		Otter-Grader Demo
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Otter-Grader}
+	\begin{block}{Kontinuierliches Feedback}
+			Vorteile:
+		\begin{enumerate}[label = $\bullet$]
+			\item realisiert \textbf{kontinuierliches Feedback} für Studis
+			\item einfach zu bedienen (für Lehrende als auch für Studis)
+			\item Code, Aufgabenstellung und Tests in einem Dokument
+		\end{enumerate}
+		Nachteile:
+		\begin{enumerate}[label = $\bullet$]
+			\item funktioniert ausschließlich mit Notebooks
+			\item Auto-Grading ist nicht voll automatisiert
+			\item (sichtbare) Tests werden mitgeliefert
+		\end{enumerate}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Jupyter-Book}
+	\begin{center}
+		\href{https://bzoennchen.github.io/ct-book/intro.html}{CT-Jupyter-Book Demo}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Retrospektive}
+	\begin{enumerate}[label = $\bullet$]
+		\item Besserer Dialog zwischen Lehrende und Lernende notwendig (insbesondere während der Pandemie)
+		\item Noch mehr ``Doing'' der Studis
+		\item Zu Beginn kleinteiligere Problemstellungen		 
+		\item Programmiersprachenspezifika unvermeidbar?
+		\item Tempo musste gedrosselt werden
+		\item Python + Jupyter-Ökosystem eignen sich für CT		
+	\end{enumerate}
+\end{frame}
+
+\appendix
+
+\begin{frame}[plain]
+	\frametitle{Quellen}
+	\begin{enumerate}[label = ]
+		\item Jupyter-Book: \href{https://bzoennchen.github.io/ct-book/intro.html}{https://bzoennchen.github.io/ct-book/intro.html}
+		\item Roboworld Doku: \href{https://robo-world-doc.readthedocs.io/en/latest/index.html}{https://robo-world-doc.readthedocs.io/en/latest/index.html}
+		\item Vortragsunterlagen: \href{https://github.com/BZoennchen/fdak-sep}{https://github.com/BZoennchen/fdak-sep}
+		\item Otter-Grader: \href{https://otter-grader.readthedocs.io/en/latest/}{https://otter-grader.readthedocs.io/en/latest/} 	
+		\item JupyterHub: \href{https://jupyter.org/hub}{https://jupyter.org/hub}
+		\item Jupyter-Notebooks: \href{https://jupyter.org/}{https://jupyter.org/}
+	\end{enumerate}
+\end{frame}
+
+%\begin{frame}
+%	\frametitle{Lessons}
+%\end{frame}
 
 \end{document}

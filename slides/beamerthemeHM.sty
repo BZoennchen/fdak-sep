@@ -4,6 +4,7 @@
 %% shadow, font, color, outer, inner
 %% normal text, alerted text, example text, structure
 
+\setbeamertemplate{footline}[frame number]
 \newenvironment{blockdefinition}[1]{%
 	\setbeamercolor{block title}{bg=colordefinition!20,fg=black}
 	\begin{block}{\textbf{Definition (#1)}}}{\end{block}}
@@ -12,18 +13,21 @@
 	\setbeamercolor{block title}{bg=colorexample!50,fg=black}
 	\begin{block}{\textbf{Beispiel (#1)}}}{\end{block}}
 
-
+%\setbeamerfont{myTOC}{series=\bfseries,size=\Large}
+%\AtBeginSection[]{\frame{\frametitle{Outline}%
+%		\usebeamerfont{myTOC}\tableofcontents[current]}}
+	
 %\useoutertheme{split}
 \setbeamercolor{normal text}{fg=black,bg=white}
 \setbeamercolor{alerted text}{fg=myorange,bg=white}
 \setbeamercolor{example text}{fg=mygreen,bg=white}
-\setbeamercolor{structure}{fg=myblue,bg=white}
-\setbeamercolor{titlelike}{fg=myblue}
+\setbeamercolor{structure}{fg=hmred,bg=white}
+\setbeamercolor{titlelike}{fg=hmred}
 \setbeamercolor{subtitle}{fg=black}
 \setbeamerfont{title}{series=\bfseries}
 
 \setbeamertemplate{sections/subsections in toc}[default]
-\setbeamertemplate{items}[default]
+%\setbeamertemplate{items}[default]
 \setbeamertemplate{navigation symbols}[only frame symbol]
 
 \setbeamertemplate{blocks}[default]
