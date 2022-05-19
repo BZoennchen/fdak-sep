@@ -10,11 +10,16 @@
 \author{\href{mailto:zoennchen.benedikt@hm.edu}{Dr. Benedikt Zönnchen} \\ \href{mailto:martin.hobelsberger@hm.edu}{Prof. Dr. Martin Hobelsberger}}
 \date{19. Mai 2022}
 \institute{\includegraphics[height=15pt]{./figs/Hochschule_Muenchen_Logo}}
+
+
 \begin{document}
 
-\begin{frame}
+\begin{frame}[plain]
+\addtocounter{framenumber}{-1}
  \titlepage
 \end{frame}
+
+\section{Einleitung}
 
 \begin{frame}
 	\frametitle{Überblick}
@@ -48,14 +53,16 @@
 
 \begin{frame}
 	\frametitle{Herausforderung}
-	Studierenden jener Studiengänge soll es möglich sein
+	Studierende jener Studiengänge soll es möglich sein
 	\begin{quoting}
-		\glqq\textbf{Problemstellungen} zu \textbf{identifizieren}, \textbf{abstrakt} zu \textbf{modellieren}, sie dabei in \textbf{Teilprobleme} zu \textbf{zerlegen}, \textbf{Lösungsstrategien} zu \textbf{entwerfen} und auszuarbeiten und diese \textbf{formalisiert} \textbf{darzustellen}, sodass sie von einem Menschen (oder auch einem Computer) verstanden und ausgeführt werden können.\grqq
+		\glqq Aspekte realweltlicher Probleme zu identifizieren, die für eine informatische Modellierung geeignet sind, algorithmische Lösungen für diese (Teil-)Probleme zu bewerten und selbst so zu entwickeln, dass diese Lösungen mit einem Computer operationalisiert werden können.\grqq -- Julian Fraillon et al, 2019 \cite{fraillon:2019}
 	\end{quoting}
-	Kurz gesagt: Studierende sollen \textbf{Computational Thinking (CT)} beherrschen.
-\end{frame}
 
-\section{Kurskonzeption}
+%	\begin{quoting}
+%		\glqq\textbf{Problemstellungen} zu \textbf{identifizieren}, \textbf{abstrakt} zu \textbf{modellieren}, sie dabei in \textbf{Teilprobleme} zu \textbf{zerlegen}, \textbf{Lösungsstrategien} zu \textbf{entwerfen} und auszuarbeiten und diese \textbf{formalisiert} \textbf{darzustellen}, sodass sie von einem Menschen (oder auch einem Computer) verstanden und ausgeführt werden können.\grqq -- Universität Paderborn (2018)
+%	\end{quoting}
+	$\Rightarrow$ Studierende sollen \textbf{Computational Thinking (CT)} beherrschen.
+\end{frame}
 
 \begin{frame}
 	\frametitle{Überblick}
@@ -72,11 +79,17 @@
 		\end{enumerate}
 \end{frame}
 
+\section{Kurskonzeption}
+
 \begin{frame}
 	\frametitle{Was verstehen wir unter CT?}
+	\begin{quoting}
+		\glqq It represents a universally applicable attitude and skill set everyone, not just computer scientists, would be eager to learn and use.\grqq \\-- Jeannette M. Wing, 2006 \cite{wing:2006}
+	\end{quoting}
 	\begin{center}
-		\includegraphics[width=0.6\textwidth]{./figs/ct-logo}
+		\includegraphics[width=0.31\textwidth]{./figs/ct-logo}
 	\end{center}
+	Computational Thinking beschreibt eine Denkweise, bei welcher der Computer als Instrument benutzt wird, um so den Denkprozess zu unterstützen.
 \end{frame}
 
 %\begin{frame}
@@ -127,7 +140,7 @@
 \begin{frame}
 	\frametitle{Kurskonzept}
 	\begin{block}{Rahmen}
-		Der CT-Kurs besteht aus Vorlesungen (2 SWS) und Praktika (2 SWS).
+		Bachelor 1. Semester, Vorlesungen (4 SWS) und Praktika (4 bzw. 2 SWS).
 	\end{block}
 	\begin{block}{Ziel}
 		\begin{enumerate}[label = $\bullet$]
@@ -170,15 +183,15 @@
 	\begin{enumerate}[label = $\bullet$]
 		\item Material zum Anfassen: Karten, Bücherstapel, Lampen, $\ldots$
 		\item Programmiersprachen: Python (+ JavaScript für \textit{Informatik und Design})
-		\item Aufgabengenerierung: \href{https://otter-grader.readthedocs.io/en/latest/}{Otter-Grader}
+		\item Aufgabengenerierung: \href{https://otter-grader.readthedocs.io/en/latest/}{Otter-Grader} \cite{otter}
 		\item Entwicklungsumgebung: 
 		\begin{enumerate}[label = $\bullet$]
-			\item \href{https://jupyter.org/}{Jupyter-Notebooks} (+ \href{https://p5js.org/get-started/}{P5.js sketch})
-			\item im JupyterLab oder \href{https://code.visualstudio.com/}{VSCode}
-			\item gehostet via \href{https://jupyter.org/hub}{JupyterHub}
+			\item \href{https://jupyter.org/}{Jupyter-Notebooks} (+ \href{https://p5js.org/get-started/}{P5.js sketch}) \cite{jupyter}
+			\item im JupyterLab oder \href{https://code.visualstudio.com/}{VSCode} \cite{jupyter}
+			\item gehostet via \href{https://jupyter.org/hub}{JupyterHub} \cite{jupyterhub, jupyter}
 		\end{enumerate}
-		\item Lehrbuch: \href{https://bzoennchen.github.io/ct-book/intro.html}{Interaktives CT-Buch} als \href{https://jupyterbook.org/en/stable/intro.html}{JupyterBook}
-		\item \href{https://robo-world-doc.readthedocs.io/en/latest/index.html}{Roboworld Python Package}
+		\item Lehrbuch: \href{https://bzoennchen.github.io/ct-book/intro.html}{Interaktives CT-Buch} als \href{https://jupyterbook.org/en/stable/intro.html}{JupyterBook} \cite{jbct, jbdoc}
+		\item \href{https://robo-world-doc.readthedocs.io/en/latest/index.html}{Roboworld Python Package} \cite{roboworld, roboworlddoc}
 	\end{enumerate}
 \end{frame}
 
@@ -229,7 +242,7 @@
 \begin{frame}
 	\frametitle{Roboworld}
 	\begin{center}
-		\includegraphics[width=\textwidth]{./figs/world-simple-maze}
+		\includegraphics[width=0.7\textwidth]{./figs/world-simple-maze}
 	\end{center}
 \end{frame}
 
@@ -305,6 +318,8 @@ Nachteile:
 	\end{center}
 \end{frame}
 
+\section{Retrospektive}
+
 \begin{frame}
 	\frametitle{Retrospektive}
 	\begin{enumerate}[label = $\bullet$]
@@ -320,15 +335,13 @@ Nachteile:
 \appendix
 
 \begin{frame}[plain]
-	\frametitle{Quellen}
-	\begin{enumerate}[label = ]
-		\item Jupyter-Book: \href{https://bzoennchen.github.io/ct-book/intro.html}{https://bzoennchen.github.io/ct-book/intro.html}
-		\item Roboworld Doku: \href{https://robo-world-doc.readthedocs.io/en/latest/index.html}{https://robo-world-doc.readthedocs.io/en/latest/index.html}
-		\item Vortragsunterlagen: \href{https://github.com/BZoennchen/fdak-sep}{https://github.com/BZoennchen/fdak-sep}
-		\item Otter-Grader: \href{https://otter-grader.readthedocs.io/en/latest/}{https://otter-grader.readthedocs.io/en/latest/} 	
-		\item JupyterHub: \href{https://jupyter.org/hub}{https://jupyter.org/hub}
-		\item Jupyter-Notebooks: \href{https://jupyter.org/}{https://jupyter.org/}
-	\end{enumerate}
+	\frametitle{Quellen \& Material}
+	{\scriptsize
+	Vortragsunterlagen: \href{https://github.com/BZoennchen/fdak-sep}{https://github.com/BZoennchen/fdak-sep} \\
+	\vspace{10pt}
+	\bibliographystyle{apalike}
+	\bibliography{references}
+}
 \end{frame}
 
 %\begin{frame}

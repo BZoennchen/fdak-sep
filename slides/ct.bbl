@@ -1,0 +1,48 @@
+\begin{thebibliography}{}
+
+\bibitem[Benedikt~Z\"onnchen, 2021]{jbct}
+Benedikt~Z\"onnchen, Sarah~Ottinger, M.~H. (2021).
+\newblock {C}omputational {T}hinking.
+\newblock \url{https://bzoennchen.github.io/ct-book/intro.html}.
+
+\bibitem[Community, 2022]{jbdoc}
+Community, T. J.~B. (2022).
+\newblock {J}upyter {B}ook {D}ocumentation.
+\newblock \url{https://jupyterbook.org/en/stable/intro.html}.
+
+\bibitem[Fraillon et~al., 2019]{fraillon:2019}
+Fraillon, J., Ainley, J., Schulz, W., Duckworth, D., and Friedman, T. (2019).
+\newblock {\em Computational thinking framework}, pages 25--31.
+\newblock Springer International Publishing, Cham.
+
+\bibitem[Jupyter, 2021a]{jupyter}
+Jupyter, P. (2021a).
+\newblock {J}upyter.
+\newblock \url{https://jupyter.org/}.
+
+\bibitem[Jupyter, 2021b]{jupyterhub}
+Jupyter, P. (2021b).
+\newblock {J}upyter{H}ub {D}ocumentation.
+\newblock \url{https://jupyter.org/hub}.
+
+\bibitem[Team, 2021]{otter}
+Team, U. B. D. S. E. P.~I. (2021).
+\newblock {O}tter-{G}rader {D}ocumentation.
+\newblock \url{https://otter-grader.readthedocs.io/en/latest/}.
+
+\bibitem[Wing, 2006]{wing:2006}
+Wing, J.~M. (2006).
+\newblock {C}omputational {T}hinking.
+\newblock {\em Commun. ACM}, 49(3):33–35.
+
+\bibitem[Z\"onnchen, 2021a]{roboworld}
+Z\"onnchen, B. (2021a).
+\newblock {R}oboworld.
+\newblock \url{https://pypi.org/project/roboworld/}.
+
+\bibitem[Z\"onnchen, 2021b]{roboworlddoc}
+Z\"onnchen, B. (2021b).
+\newblock {R}oboworld {D}ocumentation.
+\newblock \url{https://robo-world-doc.readthedocs.io/en/latest/index.html}.
+
+\end{thebibliography}

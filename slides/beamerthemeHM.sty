@@ -3,8 +3,14 @@
 
 %% shadow, font, color, outer, inner
 %% normal text, alerted text, example text, structure
+%\insertsectionhead\ifx\insertsubsectionhead\@empty\relax\else$\quad\mid\quad$\insertsubsectionhead\fi
+%\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{footline}[text line]{%
+	\parbox{1.045\textwidth}{\vspace*{-8pt}%
+		{\color{hmred}%
+		\hspace{-18pt}\ifx\insertsubsectionhead\@empty\insertsectionhead\else\insertsectionhead\ - \insertsubsectionhead\fi%
+		\hfill\insertframenumber/\inserttotalframenumber}}}%
 
-\setbeamertemplate{footline}[frame number]
 \newenvironment{blockdefinition}[1]{%
 	\setbeamercolor{block title}{bg=colordefinition!20,fg=black}
 	\begin{block}{\textbf{Definition (#1)}}}{\end{block}}
@@ -28,7 +34,7 @@
 
 \setbeamertemplate{sections/subsections in toc}[default]
 %\setbeamertemplate{items}[default]
-\setbeamertemplate{navigation symbols}[only frame symbol]
+\setbeamertemplate{navigation symbols}{}
 
 \setbeamertemplate{blocks}[default]
 
